@@ -1,0 +1,4 @@
+baseURL = 'https://mms.org.mt/'
+locale = 'en-mt'
+title = 'Malta Mathematical Society'
+theme = 'ananke'
