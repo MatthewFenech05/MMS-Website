@@ -1,0 +1,19 @@
+node_modules
+public
+.hugo_build.lock
+resources/_gen
+todo*.md
+
+# Hugo
+/public/
+/resources/_gen/
+hugo_stats.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# wireit
+.wireit
