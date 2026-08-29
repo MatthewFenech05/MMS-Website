@@ -3,10 +3,36 @@ locale = 'en-mt'
 title = 'Malta Mathematical Society'
 theme = 'ananke'
 
+defaultContentLanguageInSubDir = 'true'
 [languages]
     [languages.en]
         contentDir = 'content/english'
         label = 'English'
+        [[languages.en.menu.main]]
+            name = 'About the MMS'
+            pageRef = '/about/'
+        [[languages.en.menu.main]]
+            name = 'Become a Member'
+            pageRef = "/become-a-member/"
+        [[languages.en.menu.main]]
+            name = 'Archive'
+            pageRef = "/archive/"
+        [[languages.en.menu.main]]
+            name = 'Join our Mailing List'
+            pageRef = '/mailing-list/'
+
     [languages.mt]
         contentDir = 'content/malti'
         label = 'Malti'
+        [[languages.mt.menu.main]]
+            name = 'Dwar is-SMM'
+            pageRef = '/dwarna/'
+        [[languages.mt.menu.main]]
+            name = 'Sir Membru'
+            pageRef = "/sir-membru/"
+        [[languages.mt.menu.main]]
+            name = 'Arkivju'
+            pageRef = "/arkivju/"
+        [[languages.mt.menu.main]]
+            name = 'Join our Mailing List'
+            pageRef = '/mailing-list/'
