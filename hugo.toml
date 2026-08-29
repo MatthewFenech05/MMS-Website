@@ -2,3 +2,11 @@ baseURL = 'https://mms.org.mt/'
 locale = 'en-mt'
 title = 'Malta Mathematical Society'
 theme = 'ananke'
+
+[languages]
+    [languages.en]
+        contentDir = 'content/english'
+        label = 'English'
+    [languages.mt]
+        contentDir = 'content/malti'
+        label = 'Malti'

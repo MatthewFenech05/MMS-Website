@@ -2,6 +2,7 @@
 date = '2026-08-23T11:33:46+02:00'
 draft = true
 title = 'Hello World'
+translationKey = 'hello-world'
 +++
 
 ## Hello World
