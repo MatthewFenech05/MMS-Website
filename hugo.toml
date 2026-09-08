@@ -1,38 +1,40 @@
 baseURL = 'https://mms.org.mt/'
-locale = 'en-mt'
 title = 'Malta Mathematical Society'
-theme = 'ananke'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubDir = true
 
-defaultContentLanguageInSubDir = 'true'
+
+#for bilingualism rather than coding two websites we will use the inbuilt transaltion i18n folder,
+# which exists to translate static UI strings (like "Read More", "Subscribe", navigation menus, and footer text) 
+# using dictionary files (i18n/en.toml and i18n/mt.toml) rather than hardcoding text in HTML templates.
+#Louie, your logic has been MOVED to the 'i18n' folder!
+
+
+#https://gohugo.io/configuration/languages/
 [languages]
-    [languages.en]
-        contentDir = 'content/english'
-        label = 'English'
-        [[languages.en.menu.main]]
-            name = 'About the MMS'
-            pageRef = '/about/'
-        [[languages.en.menu.main]]
-            name = 'Become a Member'
-            pageRef = "/become-a-member/"
-        [[languages.en.menu.main]]
-            name = 'Archive'
-            pageRef = "/archive/"
-        [[languages.en.menu.main]]
-            name = 'Join our Mailing List'
-            pageRef = '/mailing-list/'
+  [languages.en]
+    languageCode = 'en-mt'
+    label = 'English'
+    weight = 1
+  
+  [languages.mt]
+    languageCode = 'mt'
+    label = 'Malti'
+    weight = 2
 
-    [languages.mt]
-        contentDir = 'content/malti'
-        label = 'Malti'
-        [[languages.mt.menu.main]]
-            name = 'Dwar is-SMM'
-            pageRef = '/dwarna/'
-        [[languages.mt.menu.main]]
-            name = 'Sir Membru'
-            pageRef = "/sir-membru/"
-        [[languages.mt.menu.main]]
-            name = 'Arkivju'
-            pageRef = "/arkivju/"
-        [[languages.mt.menu.main]]
-            name = 'Join our Mailing List'
-            pageRef = '/mailing-list/'
+[languages.mt.permalinks.section] #each arcive ovewiew will have translated URL
+  comics = '/il-komiks/'
+  events = '/attivitajiet/'
+  newsletters = '/aħbarijiet/'
+  
+[languages.mt.permalinks.page] #each archive post will have a translated URL
+  comics = '/il-komiks/:slug/'
+  events = '/attivitajiet/:slug/'
+  newsletters = '/aħbarijiet/:slug/'
+
+
+
+#decide on icon file here to be used in baseof.html
+[params]
+  browserIcon = "logo-only-color-borderless.png" #used in badeof.html
+  homeIcon = "logo-primary-color-light-background-borderless.svg" #used in header.html

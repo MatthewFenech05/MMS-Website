@@ -1,0 +1,21 @@
+[nav_about]
+other = "About"
+
+[nav_membership]
+other = "Membership"
+
+[nav_mailing_list]
+other = "Mailing List"
+
+[nav_archive]
+other = "Archive"
+
+# Archive Dropdown
+[nav_comics]
+other = "Comics"
+
+[nav_events]
+other = "Events"
+
+[nav_newsletters]
+other = "Newsletters"

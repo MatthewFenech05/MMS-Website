@@ -1,0 +1,22 @@
+# Navigation Links
+[nav_about]
+other = "Dwarna"
+
+[nav_membership]
+other = "Sir Membru"
+
+[nav_mailing_list]
+other = "Mailing List"
+
+[nav_archive]
+other = "Arkivju"
+
+# Archive Dropdown
+[nav_comics]
+other = "Komiks"
+
+[nav_events]
+other = "Attivitajiet"
+
+[nav_newsletters]
+other = "Bulletti"

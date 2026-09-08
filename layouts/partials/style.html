@@ -1,0 +1,231 @@
+<style>
+  /*import Lato, the font of our logo*/
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+  
+  :root {
+    --width: 720px;
+    --font-main: 'Lato', sans-serif;
+    --font-secondary: 'Lato', sans-serif;
+    --font-scale: 1em;
+
+    /*MMS brand colors*/
+    --background-color: #3070C7;
+    --heading-color: #000000;
+    --text-color: #000000;
+    --link-color: #971C13;
+    --visited-color: #F6CA50;
+    --blockquote-color: #000000;
+
+    --header-bg: #F6CA50;        /* Yellow header stripe */
+    --stripe-white: #FFFFFF;     /* White divider line */
+    --footer-bg: #971C13;        /* Red footer stripe */
+  }
+
+  body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: 0;
+    padding: 0px;
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  /* Header Stripe & White Divider */
+  .header-stripe {
+    display:flex;
+    justify-content: space-between; /*the x-axis*/
+    align-items: center; /*the y-axis center*/
+    background-color: var(--header-bg);
+    border-bottom: 10px solid var(--stripe-white);
+    padding: 0.75rem 1.5rem;
+  }
+
+/* Logo + Lang Switcher */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;                      /* Space between logo and language toggle */
+}
+
+.site-logo {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+  main {
+    max-width: var(--width);
+    margin: auto;
+    padding: 10px;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+
+  strong,
+  b {
+    color: var(--heading-color);
+  }
+
+  button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  time {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    font-family: monospace;
+    padding: 2px;
+    border-radius: 3px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--blockquote-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .inline {
+    width: auto !important;
+  }
+
+  .highlight,
+  .code {
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+  }
+
+  .highlight pre,
+  .code pre {
+    min-width: 100%;
+    width: max-content;
+  }
+
+  /* blog post list */
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide dropdown menu by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  min-width: 140px;
+  z-index: 1000;
+  padding: 0.5rem 0;
+}
+
+/* Style links inside the dropdown menu */
+.dropdown-content a {
+  color: #222222 !important; /* Force dark text on white menu background */
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: #F3F4F6;
+}
+
+/* Reveal dropdown menu when hovering over the container */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.comic-content img {
+  max-height: 80vh;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
+
