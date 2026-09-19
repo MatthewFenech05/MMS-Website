@@ -4,12 +4,14 @@
 
     <ul>
         {{ range sort .Pages "Params.startdate" "asc" }}
-            {{ if (time.AsTime .Params.enddate).Before now }}
-                <li>
-                    <a href="{{ .RelPermalink }}">
-                        {{ (time.AsTime .Params.startdate).Format "02 Jan, 2006" }} - {{ .Title }}
-                    </a>
-                </li>
+            {{ if and .Params.isDateConfirmed .Params.enddate }}
+                {{ if (time.AsTime .Params.enddate).Before now }}
+                    <li>
+                        <a href="{{ .RelPermalink }}">
+                            {{ if .Params.startdate }}{{ (time.AsTime .Params.startdate).Format "02 Jan, 2006" }} - {{ end }}{{ .Title }}
+                        </a>
+                    </li>
+                {{ end }}
             {{ end }}
         {{ end }}
     </ul>
