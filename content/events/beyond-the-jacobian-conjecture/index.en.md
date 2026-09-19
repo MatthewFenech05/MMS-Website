@@ -1,0 +1,11 @@
++++
+title = 'Beyond the Jacobian Conjecture'
+startDate = 2026-08-26T18:00:00
+endDate = 2026-08-26T20:00:00
+isDateConfirmed = true
+location = "Meeting Room 5, Valletta Design Cluster"
+locationPin = "https://maps.app.goo.gl/n4EsNDVuDKxuNvid6"
+isLocationConfirmed = true
++++
+
+Beyond the Jacobian Conjecture was a panel discussion about AI in Mathematics. Someone should write more here pretty please

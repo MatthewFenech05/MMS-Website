@@ -20,3 +20,7 @@ other = "Attivitajiet"
 
 [nav_newsletters]
 other = "Bulletti"
+
+# Headers and Titles
+[upcoming_events]
+other = "Attivitajiet li Ġejjin"

@@ -1,3 +1,29 @@
 {{ define "main" }}
-{{ .Content }}
+    {{ .Content }}
+
+    <h2>{{ i18n "upcoming_events" }}</h2>
+    <ul>
+        {{ range sort (where .Site.RegularPages "Section" "events") "Params.startdate" "asc" }}
+
+            {{/* show should be true if isDateConfirmed is false and/or the date is in the future */}}
+            {{ $isDateConfirmed := .Params.isDateConfirmed }}
+            {{ $show := false }}
+            {{ if eq $isDateConfirmed false }}
+                {{ $show = true }}
+            {{ else if .Params.enddate }}
+                {{ if (time.AsTime .Params.enddate).After now }}
+                    {{ $show = true }}
+                {{ end }}
+            {{ end }}
+
+            {{ if $show }}
+                <li>
+                    <a href="{{ .RelPermalink }}">
+                        {{ if .Params.startdate }}{{ (time.AsTime .Params.startdate).Format "02 Jan, 2006" }} - {{ end }}{{ .Title }}
+                    </a>
+                </li>
+            {{ end }}
+        {{ end }}
+    </ul>
+
 {{ end }}

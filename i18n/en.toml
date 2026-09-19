@@ -19,3 +19,7 @@ other = "Events"
 
 [nav_newsletters]
 other = "Newsletters"
+
+# Headers and Titles
+[upcoming_events]
+other = "Upcoming Events"

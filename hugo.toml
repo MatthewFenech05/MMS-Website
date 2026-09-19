@@ -3,12 +3,9 @@ title = 'Malta Mathematical Society'
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubDir = true
 
-
 #for bilingualism rather than coding two websites we will use the inbuilt transaltion i18n folder,
 # which exists to translate static UI strings (like "Read More", "Subscribe", navigation menus, and footer text) 
 # using dictionary files (i18n/en.toml and i18n/mt.toml) rather than hardcoding text in HTML templates.
-#Louie, your logic has been MOVED to the 'i18n' folder!
-
 
 #https://gohugo.io/configuration/languages/
 [languages]
